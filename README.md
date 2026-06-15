@@ -2,9 +2,9 @@
 ### 10 production-style queries demonstrating advanced SQL for data analysis
 
 **Database:** PostgreSQL / DuckDB compatible  
-**Context:** Olist Brazilian E-Commerce dataset — 100k orders, 2016–2018
+**Context:** Olist Brazilian E-Commerce dataset, 100k orders, 2016–2018
 
-Each query solves a real business question. Written to the standard you'd find in a data team's query library — CTEs for readability, window functions for ranking and time-series, documented logic.
+Each query solves a real business question. Written to the standard you'd find in a data team's query library, CTEs for readability, window functions for ranking and time-series, documented logic.
 
 ---
 
@@ -20,7 +20,7 @@ Each query solves a real business question. Written to the standard you'd find i
 | 06 | [customer_lifetime_value](06_customer_lifetime_value.sql) | What is each customer segment worth over their lifetime? | `NTILE`, CLV formula, `SUM() OVER()` |
 | 07 | [repeat_purchase_funnel](07_repeat_purchase_funnel.sql) | How many customers reach their 2nd, 3rd, 4th order? | `ROW_NUMBER`, funnel analysis, `FIRST_VALUE` |
 | 08 | [seller_performance_ranking](08_seller_performance_ranking.sql) | Who are the top-performing sellers? | `DENSE_RANK`, `PERCENT_RANK`, composite scoring |
-| 09 | [geographic_revenue_analysis](09_geographic_revenue_analysis.sql) | Which states drive the most revenue — and which have fulfilment problems? | Partitioned `RANK`, `SUM() OVER()`, multi-flag logic |
+| 09 | [geographic_revenue_analysis](09_geographic_revenue_analysis.sql) | Which states drive the most revenue, and which have fulfilment problems? | Partitioned `RANK`, `SUM() OVER()`, multi-flag logic |
 | 10 | [payment_behaviour_analysis](10_payment_behaviour_analysis.sql) | How do payment type and instalment patterns affect order value? | `PARTITION BY`, instalment bucketing, ratio calculations |
 
 ---
@@ -66,8 +66,8 @@ with open('01_monthly_revenue_mom_growth.sql') as f:
 print(result.head())
 ```
 
-Dataset: [Olist Brazilian E-Commerce — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+Dataset: [Olist Brazilian E-Commerce, Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 ---
 
-*Jasline Mwita — Data Analyst & Data Scientist*
+*Jasline Mwita · Data Analyst & Data Scientist*
